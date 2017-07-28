@@ -1,0 +1,34 @@
+{
+    "name": "moodle/moodle-project",
+    "description": "Project template for Moodle projects with composer",
+    "type": "project",
+    "require": {
+        "composer/installers": "^1.2",
+        "moodle/moodle": "dev-composer",
+        "mediamaisteri/moodle-local_reports": "dev-master"
+    },
+    "minimum-stability": "dev",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/juho-jaakkola/moodle"
+        },
+        {
+            "type": "vcs",
+            "url": "ssh://git@git.intra.fi:10022/moodle/local_reports.git"
+        },
+        {
+            "type":"composer",
+            "url":"http://moodleplugarit.mmg.fi"
+        }
+    ],
+    "extra": {
+        "installer-paths": {
+            "web": ["moodle/moodle"],
+            "web/local/{$name}": ["type:moodle-local"]
+        }
+    },
+    "config": {
+      "secure-http": false
+    }
+}
