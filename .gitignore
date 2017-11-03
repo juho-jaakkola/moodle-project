@@ -1,0 +1,5 @@
+.*
+*.kdev*
+!.gitignore
+vendor/
+web/
