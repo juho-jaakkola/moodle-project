@@ -21,10 +21,13 @@ branch and running `composer install`.
 
 ## Why would I want to use the template?
 
-Managing all the code through a single `composer.json` file makes is possible
-to easily duplicate the code between environments so that it is *completely
-identical* between them all.
+ - Managing all the code through a single `composer.json` file makes is possible
+   to easily duplicate the code between environments (developer1, developer2,
+   staging, production) so that it is *completely
+   identical* between them all.
+ - Possibility to update both Moodle core and all third-party plugins to latest
+   version with one single `composer update` command
+ - Possibility for automation
+   - For example the `composer install` command could be configured to also
+     automatically run upgrades via `admin/cli/upgrade.php`
 
-Some bugs may for example manifest only in some specific plugin versions.
-Therefore it is important that all the plugin tested in development
-environment get installed to production with identical versions.
