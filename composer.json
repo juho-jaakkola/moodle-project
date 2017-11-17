@@ -14,9 +14,6 @@
             "url": "https://github.com/mediamaisteri/moodle-installer.git"
         }
     ],
-    "config": {
-      "secure-http": false
-    },
     "extra": {
         "installer-paths": {
             "web/mod/{$name}/": ["type:moodle-mod"],
