@@ -26,8 +26,9 @@ branch and running `composer install`.
    staging, production) so that it is *completely
    identical* between them all.
  - Possibility to update both Moodle core and all third-party plugins to latest
-   version with one single `composer update` command
+   version with one single `composer update` command.
  - Possibility for automation
    - For example the `composer install` command could be configured to also
-     automatically run upgrades via `admin/cli/upgrade.php`
-
+     automatically run upgrades via `admin/cli/upgrade.php`.
+ - Composer is de-facto standard package manager for PHP. Learn it once, and
+   you will be able to use it with all kinds of popular PHP applications.
